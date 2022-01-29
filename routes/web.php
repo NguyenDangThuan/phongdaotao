@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+\Route::get('/{path}', 'Api\ApiController')->where('path', '(.*)');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
